@@ -113,3 +113,19 @@ Copyright (c) 2011 Code for America.
 See [LICENSE](https://github.com/codeforamerica/classtalk/blob/master/LICENSE.md) for details.
 
 [![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/classtalk.png)](http://stats.codeforamerica.org/projects/classtalk)
+
+                   ,
+                  / \,,_  .'|
+               ,{{| /}}}}/_.'
+              }}}}` '{{'  '.
+            {{{{{    _   ;, \
+         ,}}}}}}    /o`\  ` ;)
+        {{{{{{   /           (
+        }}}}}}   |            \
+       {{{{{{{{   \            \
+       }}}}}}}}}   '.__      _  |
+       {{{{{{{{       /`._  (_\ /
+        }}}}}}'      |    //___/
+        `{{{{`       |     '--'
+         }}}`
+
