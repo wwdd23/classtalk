@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
 
   def index
     if @groups.blank?
-  	else
+    else
       @page_title = "Your Groups"
       @groups = current_user.groups
       @group = @groups.first #TODO: remember what the user viewed the last time they were on the page
