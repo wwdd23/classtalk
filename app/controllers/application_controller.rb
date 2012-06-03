@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
 
   def index
     if user_signed_in?
-      redirect_to :groups
+      eol_link = "<a href='/eol'>Read more »</a>"
+      redirect_to :groups, :notice =>"ClassTalk is shutting down on 7/1/2012. #{eol_link}".html_safe
     elsif admin_signed_in?
       redirect_to "/admin"
     else
