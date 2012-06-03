@@ -32,7 +32,10 @@ Classtalk::Application.routes.draw do
   resources :students
 
   # devise_for :users
-  devise_for :users, :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register'}, :controllers=>{:registrations=>"registrations"}
+  devise_for :users, :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'users#eol'}, :controllers=>{:registrations=>"registrations"}
+  devise_for :users do
+    get   "users/register/sign_up" => "users#eol"
+  end
   devise_for :admins
 
   as :user do
@@ -46,12 +49,8 @@ Classtalk::Application.routes.draw do
 
   resources :users
 
-  devise_for :users do
-    get   "users/register/sign_up" => "users#eol", :as => :eol_signup
-  end
-
   get "/welcome" => "users#splash"
-  get "/solong" => "users#eol"
+  get "/eol" => "users#eol"
 
   # devise_for :admins, :controllers => { :sessions => "admins/sessions" }
 
