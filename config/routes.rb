@@ -46,7 +46,12 @@ Classtalk::Application.routes.draw do
 
   resources :users
 
+  devise_for :users do
+    get   "users/register/sign_up" => "users#eol", :as => :eol_signup
+  end
+
   get "/welcome" => "users#splash"
+  get "/solong" => "users#eol"
 
   # devise_for :admins, :controllers => { :sessions => "admins/sessions" }
 
