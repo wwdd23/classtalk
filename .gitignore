@@ -6,3 +6,4 @@ tmp/
 .DS_Store
 coverage/
 public/images/bg-main(old).jpg
+user_emails_12-06-03.csv
